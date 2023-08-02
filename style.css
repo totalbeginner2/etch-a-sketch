@@ -1,0 +1,40 @@
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.container {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.column {
+    height: 50px;
+    width: 50px;
+}
+
+.row {
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+
+}
+ 
+.hovered {
+    background-color: aqua;
+}
+
+.btn {
+    display: flex;
+    margin: auto;
+    margin-bottom: 25px;
+    width: 50%;
+    justify-content: center;
+}
+
+button {
+    font-size: 20px;
+}

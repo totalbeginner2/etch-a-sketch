@@ -20,19 +20,25 @@ box.forEach((elem) => {
 };
 
 
-createGrid(5);
+createGrid(16);
 
 const btn = document.querySelector('.btn');
 btn.addEventListener("click", promptMe);
 
 function promptMe( ){
-    var gridSize = prompt("Please provide number:");
+    var gridSize = prompt("Please provide number (limit: 100)");
+    if(gridSize > 100){
+    container.innerHTML=" ";
+    createGrid(100);
+    }
     container.innerHTML=" ";
     createGrid(gridSize);
 }
 
 function colorChange(box){
-    this.classList.add('hovered');
+    let colorPalette = ["#7C73C0","#94ADD7","#ACFADF","#E8FFCE"];
+    let randNum= Math.floor(Math.random() * 4)
+    this.style.background = colorPalette[randNum];
 };
 
 

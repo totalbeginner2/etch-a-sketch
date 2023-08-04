@@ -1,15 +1,14 @@
 const container = document.querySelector('.container');
 
 function createGrid(size){
-for(let i =0; i < size; i++){
-    let column = document.createElement('div');
-    column.className= "column";
-    for(let x = 0; x<size; x++){
+for(let i =0; i < size * size; i++){
+    
         let row = document.createElement('div');
         row.className="row box";
-        column.appendChild(row);
-    }
-    container.appendChild(column);
+        container.appendChild(row);
+        let rowSize = 920 / size;
+        row.style.height = `${rowSize}px`;
+        row.style.width = `${rowSize}px`;
 }
 
 const box = document.querySelectorAll(".box");

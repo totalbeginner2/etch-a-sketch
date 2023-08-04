@@ -6,27 +6,23 @@ h1 {
 
 .container {
     display: flex;
+    flex-wrap: wrap;
     margin: auto;
-    justify-content: center;
     box-sizing: border-box;
+    justify-content: center;
+    border: 1px solid black;
+    width: 960px;
+    height: 600px;
 }
 
-.column {
-    height: 50px;
-    width: 50px;
-}
 
 .row {
     border: 1px solid black;
     height: 50px;
     width: 50px;
-
+    box-sizing: border-box;
 }
  
-.hovered {
-    background-color: aqua;
-}
-
 .btn {
     display: flex;
     margin: auto;

@@ -3,12 +3,13 @@ const container = document.querySelector('.container');
 function createGrid(size){
 for(let i =0; i < size * size; i++){
     
-        let row = document.createElement('div');
-        row.className="row box";
-        container.appendChild(row);
-        let rowSize = 920 / size;
-        row.style.height = `${rowSize}px`;
-        row.style.width = `${rowSize}px`;
+        let box = document.createElement('div');
+        box.className="box";
+        container.appendChild(box);
+        let boxSizeWidth = 955 / size;
+        let boxSizeHeight = 600 / size;
+        box.style.height = `${boxSizeHeight}px`;
+        box.style.width = `${boxSizeWidth}px`;
 }
 
 const box = document.querySelectorAll(".box");
